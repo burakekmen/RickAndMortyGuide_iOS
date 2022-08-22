@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mismis.TTF">
+            <string>Misfits</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RVs-QZ-TeG" customClass="CharactersCollectionViewCellItem" customModule="RickAndMorty_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dr1-sG-W76">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-S6-lR2">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aa3-ap-CfV">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlS-x8-Org">
+                                <rect key="frame" x="0.0" y="160" width="200" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KR-kx-2sE">
+                                        <rect key="frame" x="10" y="10" width="180" height="20"/>
+                                        <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="15"/>
+                                        <color key="textColor" name="characterCellLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="15O-3v-8Th"/>
+                                    <constraint firstItem="4KR-kx-2sE" firstAttribute="top" secondItem="ZlS-x8-Org" secondAttribute="top" constant="10" id="Fas-Fc-1aC"/>
+                                    <constraint firstAttribute="bottom" secondItem="4KR-kx-2sE" secondAttribute="bottom" constant="10" id="Yl8-0D-x9D"/>
+                                    <constraint firstAttribute="trailing" secondItem="4KR-kx-2sE" secondAttribute="trailing" constant="10" id="a5Q-Ps-xSL"/>
+                                    <constraint firstItem="4KR-kx-2sE" firstAttribute="leading" secondItem="ZlS-x8-Org" secondAttribute="leading" constant="10" id="wIr-KZ-ddp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZlS-x8-Org" secondAttribute="bottom" id="I5b-L4-glY"/>
+                            <constraint firstAttribute="bottom" secondItem="aa3-ap-CfV" secondAttribute="bottom" id="OiO-wt-bGa"/>
+                            <constraint firstAttribute="trailing" secondItem="aa3-ap-CfV" secondAttribute="trailing" id="X4C-hX-dCG"/>
+                            <constraint firstItem="aa3-ap-CfV" firstAttribute="top" secondItem="cgM-S6-lR2" secondAttribute="top" id="X6i-G3-nUB"/>
+                            <constraint firstAttribute="trailing" secondItem="ZlS-x8-Org" secondAttribute="trailing" id="dMC-xi-ivt"/>
+                            <constraint firstItem="aa3-ap-CfV" firstAttribute="leading" secondItem="cgM-S6-lR2" secondAttribute="leading" id="dsz-8W-054"/>
+                            <constraint firstItem="ZlS-x8-Org" firstAttribute="leading" secondItem="cgM-S6-lR2" secondAttribute="leading" id="po6-Ym-Q0I"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cgM-S6-lR2" secondAttribute="trailing" id="Bgd-Pm-vVv"/>
+                    <constraint firstItem="cgM-S6-lR2" firstAttribute="top" secondItem="dr1-sG-W76" secondAttribute="top" id="D9x-EV-Vt5"/>
+                    <constraint firstAttribute="bottom" secondItem="cgM-S6-lR2" secondAttribute="bottom" id="QFr-qG-fkw"/>
+                    <constraint firstItem="cgM-S6-lR2" firstAttribute="leading" secondItem="dr1-sG-W76" secondAttribute="leading" id="iho-jr-L8B"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="characterNameHeightConstraint" destination="15O-3v-8Th" id="unR-tC-S9x"/>
+                <outlet property="holderView" destination="dr1-sG-W76" id="dcA-m5-7cw"/>
+                <outlet property="imgCharacter" destination="aa3-ap-CfV" id="9Wk-fu-444"/>
+                <outlet property="lblCharacterName" destination="4KR-kx-2sE" id="Qqa-xq-Xit"/>
+                <outlet property="subView" destination="cgM-S6-lR2" id="vWb-Cd-9cK"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="87.723214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="characterCellLabelColor">
+            <color red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

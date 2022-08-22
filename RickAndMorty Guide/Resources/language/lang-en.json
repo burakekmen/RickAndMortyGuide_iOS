@@ -1,0 +1,22 @@
+{
+    "str_empty" : "",
+    "str_app_name" : "Rick&Morty Guide",
+    "str_success" : "Success",
+    "str_warning" : "Warning",
+    "str_error" : "Error",
+    "str_ok": "Okey",
+    "str_cancel" : "Cancel",
+    "str_vazgec" : "Vazgeç",
+    "str_close" : "Close",
+    "str_please_check_your_network_connection" : "Check your network connection please!",
+    "str_back": "Back",
+    "str_characters": "Characters",
+    "str_favorites": "Favorites",
+    "str_episodes": "Episodes",
+    "str_commonErrorMesage" : "There is a error. Please try again later!",
+    "str_serverErrorMessage" : "Connection timed out. Please try again later!",
+    "str_undefinedResponseMessage" :  "Tanımlanamayan server dönüşü",
+    "str_information" : "Information",
+    "str_character_detail_page_navigation_title": "Character Detail",
+    "str_episode_detail_page_navigation_title": "Episode Detail"
+}

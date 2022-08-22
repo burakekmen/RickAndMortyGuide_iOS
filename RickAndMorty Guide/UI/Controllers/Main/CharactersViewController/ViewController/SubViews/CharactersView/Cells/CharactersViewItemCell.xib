@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mismis.TTF">
+            <string>Misfits</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f3V-h4-Ygo" customClass="CharactersViewItemCell" customModule="RickAndMorty_Guide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f3V-h4-Ygo" id="WdW-JY-wyw">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="dVD-h9-YOS">
+                        <rect key="frame" x="5" y="5" width="390" height="170"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="o8j-hv-yLA">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="170"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="jB6-un-mIa">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="170"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="im5-a0-69q">
+                                        <rect key="frame" x="130" y="0.0" width="260" height="170"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="752" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hPf-7h-nzw">
+                                                <rect key="frame" x="10" y="10" width="240" height="40"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="20"/>
+                                                <color key="textColor" name="characterCellBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="STATUS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Cvc-25-TBy">
+                                                <rect key="frame" x="10" y="70" width="40" height="15"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="14"/>
+                                                <color key="textColor" name="characterCellBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="ALIVE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="goM-h2-Frb">
+                                                <rect key="frame" x="60" y="70" width="190" height="15"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="14"/>
+                                                <color key="textColor" name="characterCellAliveStatusColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="SPECIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZh-IX-Rph">
+                                                <rect key="frame" x="10" y="95" width="53" height="15"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="14"/>
+                                                <color key="textColor" name="characterCellBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="752" text="ALIEN" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HC6-dA-GKF">
+                                                <rect key="frame" x="73" y="95" width="177" height="15"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="14"/>
+                                                <color key="textColor" name="characterCellDefaultColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="GENDER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2f-2l-xhe">
+                                                <rect key="frame" x="10" y="120" width="52" height="15"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="14"/>
+                                                <color key="textColor" name="characterCellBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="MALE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Nq4-30-0Qs">
+                                                <rect key="frame" x="72" y="120" width="178" height="15"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="14"/>
+                                                <color key="textColor" name="characterCellDefaultColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="ORIGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IW-8n-5lo">
+                                                <rect key="frame" x="10" y="145" width="43" height="15"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="14"/>
+                                                <color key="textColor" name="characterCellBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="PLUTO" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B6z-H2-R5B">
+                                                <rect key="frame" x="63" y="145" width="187" height="15"/>
+                                                <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="14"/>
+                                                <color key="textColor" name="characterCellDefaultColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="HC6-dA-GKF" firstAttribute="top" secondItem="goM-h2-Frb" secondAttribute="bottom" constant="10" id="4Di-zu-XJu"/>
+                                            <constraint firstItem="4IW-8n-5lo" firstAttribute="leading" secondItem="im5-a0-69q" secondAttribute="leading" constant="10" id="5es-OD-pcn"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nq4-30-0Qs" secondAttribute="trailing" constant="10" id="7Hy-5O-sLn"/>
+                                            <constraint firstAttribute="bottom" secondItem="B6z-H2-R5B" secondAttribute="bottom" constant="10" id="9yt-12-s5M"/>
+                                            <constraint firstItem="B6z-H2-R5B" firstAttribute="leading" secondItem="4IW-8n-5lo" secondAttribute="trailing" constant="10" id="AEw-Wg-wZn"/>
+                                            <constraint firstItem="Cvc-25-TBy" firstAttribute="top" secondItem="hPf-7h-nzw" secondAttribute="bottom" constant="20" id="CvR-by-QLA"/>
+                                            <constraint firstItem="4IW-8n-5lo" firstAttribute="top" secondItem="B6z-H2-R5B" secondAttribute="top" id="FLi-vM-6XI"/>
+                                            <constraint firstItem="Nq4-30-0Qs" firstAttribute="top" secondItem="HC6-dA-GKF" secondAttribute="bottom" constant="10" id="GHj-4Y-PA9"/>
+                                            <constraint firstItem="4IW-8n-5lo" firstAttribute="top" secondItem="f2f-2l-xhe" secondAttribute="bottom" constant="10" id="GMz-Vn-gdg"/>
+                                            <constraint firstAttribute="trailing" secondItem="hPf-7h-nzw" secondAttribute="trailing" constant="10" id="HRn-BZ-O2I"/>
+                                            <constraint firstItem="HC6-dA-GKF" firstAttribute="leading" secondItem="MZh-IX-Rph" secondAttribute="trailing" constant="10" id="KVu-uY-Ndv"/>
+                                            <constraint firstItem="f2f-2l-xhe" firstAttribute="leading" secondItem="im5-a0-69q" secondAttribute="leading" constant="10" id="L4c-t5-2Cl"/>
+                                            <constraint firstItem="f2f-2l-xhe" firstAttribute="top" secondItem="MZh-IX-Rph" secondAttribute="bottom" constant="10" id="Nmn-Pl-cDo"/>
+                                            <constraint firstAttribute="trailing" secondItem="B6z-H2-R5B" secondAttribute="trailing" constant="10" id="NsT-fm-7UY"/>
+                                            <constraint firstItem="Nq4-30-0Qs" firstAttribute="leading" secondItem="f2f-2l-xhe" secondAttribute="trailing" constant="10" id="RrB-DY-R8v"/>
+                                            <constraint firstItem="Cvc-25-TBy" firstAttribute="leading" secondItem="im5-a0-69q" secondAttribute="leading" constant="10" id="UMr-m0-DPY"/>
+                                            <constraint firstItem="MZh-IX-Rph" firstAttribute="leading" secondItem="im5-a0-69q" secondAttribute="leading" constant="10" id="YSU-39-7DE"/>
+                                            <constraint firstItem="MZh-IX-Rph" firstAttribute="top" secondItem="Cvc-25-TBy" secondAttribute="bottom" constant="10" id="bD6-0z-98c"/>
+                                            <constraint firstAttribute="trailing" secondItem="goM-h2-Frb" secondAttribute="trailing" constant="10" id="jMf-gT-Zed"/>
+                                            <constraint firstItem="goM-h2-Frb" firstAttribute="top" secondItem="hPf-7h-nzw" secondAttribute="bottom" constant="20" id="l1a-Tx-dPU"/>
+                                            <constraint firstItem="goM-h2-Frb" firstAttribute="leading" secondItem="Cvc-25-TBy" secondAttribute="trailing" constant="10" id="le5-SW-7Oi"/>
+                                            <constraint firstItem="hPf-7h-nzw" firstAttribute="top" secondItem="im5-a0-69q" secondAttribute="top" constant="10" id="lh4-F7-s98"/>
+                                            <constraint firstItem="B6z-H2-R5B" firstAttribute="top" secondItem="Nq4-30-0Qs" secondAttribute="bottom" constant="10" id="mjU-oc-SVC"/>
+                                            <constraint firstItem="hPf-7h-nzw" firstAttribute="leading" secondItem="im5-a0-69q" secondAttribute="leading" constant="10" id="u58-NA-dgD"/>
+                                            <constraint firstAttribute="trailing" secondItem="HC6-dA-GKF" secondAttribute="trailing" constant="10" id="xcF-kH-viz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jB6-un-mIa" firstAttribute="width" secondItem="im5-a0-69q" secondAttribute="width" multiplier="0.5" id="KRR-ew-6qs"/>
+                                    <constraint firstItem="jB6-un-mIa" firstAttribute="height" secondItem="im5-a0-69q" secondAttribute="height" id="a5A-gA-Nd3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o8j-hv-yLA" secondAttribute="trailing" id="Nl0-tw-Fws"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="g32-QE-eAj"/>
+                            <constraint firstItem="o8j-hv-yLA" firstAttribute="top" secondItem="dVD-h9-YOS" secondAttribute="top" id="gok-H3-uaS"/>
+                            <constraint firstItem="o8j-hv-yLA" firstAttribute="leading" secondItem="dVD-h9-YOS" secondAttribute="leading" id="iPa-Kc-gK2"/>
+                            <constraint firstAttribute="bottom" secondItem="o8j-hv-yLA" secondAttribute="bottom" id="otY-bl-23x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="dVD-h9-YOS" firstAttribute="leading" secondItem="WdW-JY-wyw" secondAttribute="leading" constant="5" id="7zh-f9-URe"/>
+                    <constraint firstItem="dVD-h9-YOS" firstAttribute="top" secondItem="WdW-JY-wyw" secondAttribute="top" constant="5" id="R9Q-Ma-g1q"/>
+                    <constraint firstAttribute="trailing" secondItem="dVD-h9-YOS" secondAttribute="trailing" constant="5" id="csN-vP-jEK"/>
+                    <constraint firstAttribute="bottom" secondItem="dVD-h9-YOS" secondAttribute="bottom" constant="5" id="elG-6V-4Sa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgCharacter" destination="jB6-un-mIa" id="J6h-ic-9VY"/>
+                <outlet property="lblGender" destination="Nq4-30-0Qs" id="5em-3Z-6VJ"/>
+                <outlet property="lblName" destination="hPf-7h-nzw" id="HbJ-tR-Zfs"/>
+                <outlet property="lblOrigin" destination="B6z-H2-R5B" id="LBb-iv-hRG"/>
+                <outlet property="lblSpecies" destination="HC6-dA-GKF" id="W5b-K2-U2H"/>
+                <outlet property="lblStatus" destination="goM-h2-Frb" id="etl-9U-3bF"/>
+                <outlet property="subView" destination="dVD-h9-YOS" id="ac9-7D-m0I"/>
+            </connections>
+            <point key="canvasLocation" x="1087" y="21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="characterCellAliveStatusColor">
+            <color red="0.090196078431372548" green="0.4823529411764706" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="characterCellBackgroundColor">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="characterCellDefaultColor">
+            <color red="0.95294117647058818" green="0.42745098039215684" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

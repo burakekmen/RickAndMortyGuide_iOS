@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBarView" customModule="RickAndMorty_Guide" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="76d-1y-vYL" id="OJ8-LH-kd2"/>
+                <outlet property="filterPickerView" destination="1tS-yZ-NUZ" id="W91-Ub-dcE"/>
+                <outlet property="searchBar" destination="HRZ-CR-VZy" id="sGE-Ub-L9M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="76d-1y-vYL">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zV-2e-dMc">
+                    <rect key="frame" x="5" y="5" width="404" height="70"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CJZ-pw-5QF">
+                            <rect key="frame" x="0.0" y="0.0" width="404" height="70"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9q-A7-9Uc">
+                                    <rect key="frame" x="0.0" y="0.0" width="237.5" height="70"/>
+                                    <subviews>
+                                        <searchBar contentMode="redraw" placeholder="bla bla bla ..." translatesAutoresizingMaskIntoConstraints="NO" id="HRZ-CR-VZy">
+                                            <rect key="frame" x="0.0" y="0.0" width="237.5" height="70"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <textInputTraits key="textInputTraits" textContentType="name"/>
+                                            <scopeButtonTitles>
+                                                <string>Title</string>
+                                                <string>Title</string>
+                                            </scopeButtonTitles>
+                                        </searchBar>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="HRZ-CR-VZy" secondAttribute="bottom" id="2ai-yh-P7T"/>
+                                        <constraint firstItem="HRZ-CR-VZy" firstAttribute="leading" secondItem="i9q-A7-9Uc" secondAttribute="leading" id="9V5-KH-6gr"/>
+                                        <constraint firstItem="HRZ-CR-VZy" firstAttribute="top" secondItem="i9q-A7-9Uc" secondAttribute="top" id="dCo-0j-f4q"/>
+                                        <constraint firstAttribute="trailing" secondItem="HRZ-CR-VZy" secondAttribute="trailing" id="qfX-cp-hmv"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tS-yZ-NUZ" customClass="TextFieldPickerView" customModule="RickAndMorty_Guide" customModuleProvider="target">
+                                    <rect key="frame" x="245.5" y="0.0" width="158.5" height="70"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="i9q-A7-9Uc" firstAttribute="width" secondItem="1tS-yZ-NUZ" secondAttribute="width" multiplier="1.5" id="mDe-tq-gR5"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="CJZ-pw-5QF" firstAttribute="leading" secondItem="2zV-2e-dMc" secondAttribute="leading" id="0SN-8S-KA4"/>
+                        <constraint firstAttribute="trailing" secondItem="CJZ-pw-5QF" secondAttribute="trailing" id="oEe-ow-ndn"/>
+                        <constraint firstItem="CJZ-pw-5QF" firstAttribute="top" secondItem="2zV-2e-dMc" secondAttribute="top" id="pGz-ng-QJJ"/>
+                        <constraint firstAttribute="bottom" secondItem="CJZ-pw-5QF" secondAttribute="bottom" id="pdd-5w-qdH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cnD-4d-sIf"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cnD-4d-sIf" firstAttribute="bottom" secondItem="2zV-2e-dMc" secondAttribute="bottom" constant="5" id="Rfd-Ml-fpn"/>
+                <constraint firstItem="2zV-2e-dMc" firstAttribute="top" secondItem="76d-1y-vYL" secondAttribute="top" constant="5" id="dgW-Uf-fD6"/>
+                <constraint firstItem="2zV-2e-dMc" firstAttribute="leading" secondItem="cnD-4d-sIf" secondAttribute="leading" constant="5" id="p0F-yD-wdl"/>
+                <constraint firstItem="cnD-4d-sIf" firstAttribute="trailing" secondItem="2zV-2e-dMc" secondAttribute="trailing" constant="5" id="qSP-hH-b0j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="153.62318840579712" y="107.8125"/>
+        </view>
+    </objects>
+</document>

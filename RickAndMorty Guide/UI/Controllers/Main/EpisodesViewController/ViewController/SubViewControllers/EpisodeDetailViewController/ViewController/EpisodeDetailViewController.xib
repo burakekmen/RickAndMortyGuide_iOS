@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mismis.TTF">
+            <string>Misfits</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodeDetailViewController" customModule="RickAndMorty_Guide" customModuleProvider="target">
+            <connections>
+                <outlet property="charactersCollectionView" destination="WK1-45-46j" id="byA-v4-gQw"/>
+                <outlet property="charactersCollectionViewHeightConstraint" destination="Nri-Rv-mR8" id="JnC-aM-3c2"/>
+                <outlet property="lblEpisodeName" destination="04G-cK-Z6P" id="Nmq-BJ-GTg"/>
+                <outlet property="lblEpisodePart" destination="iZY-8L-VJz" id="Tek-3a-pPo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOg-Tw-JBI">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCl-Kd-2dr">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="819"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_episode_popcorn_v1" translatesAutoresizingMaskIntoConstraints="NO" id="hqH-Nh-V98">
+                                    <rect key="frame" x="169.5" y="25" width="75" height="75"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="75" id="UxD-wJ-tAd"/>
+                                        <constraint firstAttribute="height" constant="75" id="Wxl-lZ-dbc"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="04G-cK-Z6P">
+                                    <rect key="frame" x="20" y="120" width="374" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZY-8L-VJz">
+                                    <rect key="frame" x="207" y="130" width="0.0" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="20"/>
+                                    <color key="textColor" name="characterCellDefaultColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="753" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-45-46j" customClass="CharactersCollectionView" customModule="RickAndMorty_Guide" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="223" width="414" height="576"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="576" id="Nri-Rv-mR8"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="hqH-Nh-V98" firstAttribute="top" secondItem="gCl-Kd-2dr" secondAttribute="top" constant="25" id="G0V-4J-r6C"/>
+                                <constraint firstAttribute="trailing" secondItem="04G-cK-Z6P" secondAttribute="trailing" constant="20" id="OLJ-U8-cwu"/>
+                                <constraint firstItem="hqH-Nh-V98" firstAttribute="centerX" secondItem="gCl-Kd-2dr" secondAttribute="centerX" id="Wae-Iy-azD"/>
+                                <constraint firstAttribute="bottom" secondItem="WK1-45-46j" secondAttribute="bottom" constant="20" id="gCU-aT-soV"/>
+                                <constraint firstItem="iZY-8L-VJz" firstAttribute="centerX" secondItem="gCl-Kd-2dr" secondAttribute="centerX" id="nzN-jf-8e6"/>
+                                <constraint firstItem="04G-cK-Z6P" firstAttribute="top" secondItem="hqH-Nh-V98" secondAttribute="bottom" constant="20" id="qBv-Yz-uZp"/>
+                                <constraint firstItem="04G-cK-Z6P" firstAttribute="leading" secondItem="gCl-Kd-2dr" secondAttribute="leading" constant="20" id="rXb-aO-wmT"/>
+                                <constraint firstAttribute="trailing" secondItem="WK1-45-46j" secondAttribute="trailing" id="tzt-K7-KQP"/>
+                                <constraint firstItem="WK1-45-46j" firstAttribute="top" secondItem="gCl-Kd-2dr" secondAttribute="top" constant="223" id="vji-32-yGm"/>
+                                <constraint firstItem="WK1-45-46j" firstAttribute="leading" secondItem="gCl-Kd-2dr" secondAttribute="leading" id="wRp-OB-Wzx"/>
+                                <constraint firstItem="iZY-8L-VJz" firstAttribute="top" secondItem="04G-cK-Z6P" secondAttribute="bottom" constant="10" id="zgw-bS-t6H"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gCl-Kd-2dr" firstAttribute="leading" secondItem="iSO-mx-IrF" secondAttribute="leading" id="E0T-3g-aXB"/>
+                        <constraint firstItem="gCl-Kd-2dr" firstAttribute="bottom" secondItem="iSO-mx-IrF" secondAttribute="bottom" id="Noi-9z-iHE"/>
+                        <constraint firstItem="gCl-Kd-2dr" firstAttribute="height" secondItem="0Nu-pf-IsK" secondAttribute="height" priority="750" constant="1" id="RXx-Bk-d9a"/>
+                        <constraint firstItem="gCl-Kd-2dr" firstAttribute="top" secondItem="iSO-mx-IrF" secondAttribute="top" id="oqD-0B-yiz"/>
+                        <constraint firstItem="gCl-Kd-2dr" firstAttribute="trailing" secondItem="iSO-mx-IrF" secondAttribute="trailing" id="sev-m6-KdE"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="iSO-mx-IrF"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="0Nu-pf-IsK"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="primaryLightGray"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dOg-Tw-JBI" secondAttribute="bottom" id="Cf4-xf-QWY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dOg-Tw-JBI" secondAttribute="trailing" id="DD3-eS-9H7"/>
+                <constraint firstItem="gCl-Kd-2dr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Qgh-xH-Gqh"/>
+                <constraint firstItem="dOg-Tw-JBI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yo5-Z8-6VF"/>
+                <constraint firstItem="dOg-Tw-JBI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gf1-fr-0HN"/>
+            </constraints>
+            <point key="canvasLocation" x="-0.80000000000000004" y="-0.44977511244377816"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_episode_popcorn_v1" width="512" height="512"/>
+        <namedColor name="characterCellDefaultColor">
+            <color red="0.95294117647058818" green="0.42745098039215684" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryLightGray">
+            <color red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

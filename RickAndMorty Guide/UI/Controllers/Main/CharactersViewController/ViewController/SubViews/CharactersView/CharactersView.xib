@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharactersView" customModule="RickAndMorty_Guide" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="0Qv-rK-Cmm" id="KR1-Gz-lzu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fek-4g-YRj">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="700"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0Qv-rK-Cmm">
+                    <rect key="frame" x="10" y="10" width="430" height="690"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Bf8-jg-Cj5"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0Qv-rK-Cmm" secondAttribute="bottom" id="8KB-qu-OQp"/>
+                <constraint firstItem="Bf8-jg-Cj5" firstAttribute="trailing" secondItem="0Qv-rK-Cmm" secondAttribute="trailing" constant="10" id="haV-r2-cc0"/>
+                <constraint firstItem="0Qv-rK-Cmm" firstAttribute="leading" secondItem="Bf8-jg-Cj5" secondAttribute="leading" constant="10" id="iFb-RA-dKK"/>
+                <constraint firstItem="0Qv-rK-Cmm" firstAttribute="top" secondItem="fek-4g-YRj" secondAttribute="top" constant="10" id="iYW-cU-IwT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="219" y="58"/>
+        </view>
+    </objects>
+</document>

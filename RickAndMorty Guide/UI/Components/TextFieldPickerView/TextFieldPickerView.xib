@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="mismis.TTF">
+            <string>Misfits</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldPickerView" customModule="RickAndMorty_Guide" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="NXa-rg-kxi" id="moa-pD-YUO"/>
+                <outlet property="txtPickerFilterType" destination="mwv-63-aJh" id="RZ9-dX-1ZZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NXa-rg-kxi">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mwv-63-aJh">
+                    <rect key="frame" x="5" y="5" width="404" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" name="characterCellBackgroundColor"/>
+                    <fontDescription key="fontDescription" name="Misfits" family="Misfits" pointSize="30"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.down.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="TAK-PP-ZuT">
+                    <rect key="frame" x="364" y="25.5" width="30" height="29"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" name="characterCellBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="mp7-IB-t9F"/>
+                        <constraint firstAttribute="width" constant="30" id="uXn-Dx-daZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Chc-Xc-qyz"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Chc-Xc-qyz" firstAttribute="trailing" secondItem="mwv-63-aJh" secondAttribute="trailing" constant="5" id="4q6-NP-Aqu"/>
+                <constraint firstItem="mwv-63-aJh" firstAttribute="leading" secondItem="Chc-Xc-qyz" secondAttribute="leading" constant="5" id="B9o-Dy-WOq"/>
+                <constraint firstItem="TAK-PP-ZuT" firstAttribute="centerY" secondItem="NXa-rg-kxi" secondAttribute="centerY" id="J1u-Zp-MTX"/>
+                <constraint firstItem="Chc-Xc-qyz" firstAttribute="bottom" secondItem="mwv-63-aJh" secondAttribute="bottom" constant="5" id="noj-Mb-Mdq"/>
+                <constraint firstItem="mwv-63-aJh" firstAttribute="top" secondItem="NXa-rg-kxi" secondAttribute="top" constant="5" id="qeZ-Cl-16a"/>
+                <constraint firstItem="Chc-Xc-qyz" firstAttribute="trailing" secondItem="TAK-PP-ZuT" secondAttribute="trailing" constant="20" id="zNf-PO-0uZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="347.82608695652175" y="131.91964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowtriangle.down.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="characterCellBackgroundColor">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

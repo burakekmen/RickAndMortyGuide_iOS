@@ -16,7 +16,7 @@ Used Libraries
   src="https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/CharactersPage.png"
   alt=""
   title="Characters Page"
-   width="250" height="200"
+   width="300" height="600"
   style="display: inline-block; margin: 0 auto;">
   
 ![Alt text](https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/CharactersPage.png)

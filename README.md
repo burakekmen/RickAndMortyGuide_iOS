@@ -13,12 +13,12 @@ Used Libraries
 - Kingfisher
 
 
-(https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/CharactersPage.png)
+![Alt text](https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/CharactersPage.png)
 
-(https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/CharacterDetailPage.png)
+![Alt text](https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/CharacterDetailPage.png)
 
-(https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/FavoritePage.png)
+![Alt text](https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/FavoritePage.png)
 
-(https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/EpisodesPage.png)
+![Alt text](https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/EpisodesPage.png)
 
-(https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/EpisodeDetailPage.png)
+![Alt text](https://github.com/burakekmen/RickAndMortyGuide_iOS/blob/main/ScreenShots/EpisodeDetailPage.png)
